@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Run Selenium Tests
     steps:
+    - name: Start selenoid
+      uses: Xotabu4/selenoid-github-action@v2
+
     - uses: actions/checkout@v3
     - run: npm i
  
