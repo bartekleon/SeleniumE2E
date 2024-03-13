@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "http-server",
-    "test": "selenium-side-runner Mytest.side",
+    "test": "node test.js",
     "e2e-test": "start-server-and-test 8080"
   },
   "keywords": [],
