@@ -1,0 +1,46 @@
+{
+  "id": "ddca1f32-5154-4b8f-aaa6-8c6c337cd2e6",
+  "version": "2.0",
+  "name": "Mytest",
+  "url": "http://127.0.0.1:5500",
+  "tests": [{
+    "id": "b32a5933-7cca-4336-841b-60a3277d9e02",
+    "name": "Untitled",
+    "commands": [{
+      "id": "7c71f8e7-64c5-4014-b029-9b2be26ea0ce",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b47eb24-cb1a-4599-831f-9b45c0f8fd97",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'press me')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e23d1803-b807-44e3-8890-ae2a09cb25e0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6c0a9264-0b9c-43ea-96c4-412e9f9c0c4e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b32a5933-7cca-4336-841b-60a3277d9e02"]
+  }],
+  "urls": ["http://127.0.0.1:5500/"],
+  "plugins": []
+}

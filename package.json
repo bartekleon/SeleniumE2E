@@ -1,0 +1,21 @@
+{
+  "name": "selenium-e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server",
+    "test": "selenium-side-runner Mytest.side",
+    "e2e-test": "start-server-and-test 8080"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "mocha": "^10.3.0",
+    "selenium-side-runner": "^4.0.1",
+    "selenium-webdriver": "^4.18.1",
+    "start-server-and-test": "^2.0.3"
+  }
+}
