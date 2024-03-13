@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "http-server",
-    "test": "selenium-side-runner Mytest.side",
+    "test": "mocha --no-timeouts untitled.spec.js",
     "e2e-test": "start-server-and-test 8080"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "chromedriver": "^122.0.5",
     "http-server": "^14.1.1",
     "mocha": "^10.3.0",
     "selenium-side-runner": "^4.0.1",
