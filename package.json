@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "http-server",
-    "test": "mocha --no-timeouts untitled.spec.js",
-    "e2e-test": "start-server-and-test 8080"
+    "start": "http-server -p 5500",
+    "patch": "node patch_tests.js",
+    "test": "mocha --no-timeouts e2e_patched/*.spec.cjs",
+    "e2e-test": "start-server-and-test 5500"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +17,6 @@
     "chromedriver": "^122.0.5",
     "http-server": "^14.1.1",
     "mocha": "^10.3.0",
-    "selenium-side-runner": "^4.0.1",
     "selenium-webdriver": "^4.18.1",
     "start-server-and-test": "^2.0.3"
   }
