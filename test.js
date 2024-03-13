@@ -7,7 +7,7 @@ const screen = {
  
 (async function buttonRender() {
   let driver = await new Builder()
-    .forBrowser(Browser.CHROME)
+    .forBrowser(Browser.FIREFOX)
     .build();
  
   try {
