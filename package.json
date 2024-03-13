@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "http-server",
-    "test": "mocha --no-timeouts untitled.spec.js",
+    "patch": "node patch_tests.js",
+    "test": "mocha --no-timeouts e2e_patched/*.spec.cjs",
     "e2e-test": "start-server-and-test 8080"
   },
   "keywords": [],
