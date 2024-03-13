@@ -9,9 +9,17 @@ jobs:
   tests:
     runs-on: ubuntu-latest
     name: Run Selenium Tests
+    strategy:
+      fail-fast: false
+      max-parallel: 5
     steps:
-    - name: Start selenoid
-      uses: Xotabu4/selenoid-github-action@v2
+    - name: Install dependencies
+      run: |
+      set -ex
+      wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+      sudo apt install ./google-chrome-stable_current_amd64.deb
+  - uses: nanasess/setup-chromedriver@v1
+  - run: chromedriver --url-base=/wd/hub &amp;
 
     - uses: actions/checkout@v3
     - run: npm i
