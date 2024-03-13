@@ -5,10 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "http-server",
+    "start": "http-server -p 5500",
     "patch": "node patch_tests.js",
     "test": "mocha --no-timeouts e2e_patched/*.spec.cjs",
-    "e2e-test": "start-server-and-test 8080"
+    "e2e-test": "start-server-and-test 5500"
   },
   "keywords": [],
   "author": "",
